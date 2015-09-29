@@ -1,0 +1,70 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title TwiLabs - Advanced Web and Mobile Apps Development.
+    link(rel='stylesheet', href='stylesheets/bootstrap.min.css', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/animate.min.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/creative.css', type='text/css')
+  body
+    header
+      .header-content
+        .header-content-inner
+          .container
+            .row
+              .col-md-10
+                .well.well-sm
+                  form.form-horizontal(method='post', action='contact/send')
+                    fieldset
+                      legend.text-center.header Contact us
+                      .form-group
+                        span.col-md-1.col-md-offset-1.text-center
+                          i.fa.fa-user.bigicon
+                        .col-md-8
+                          input#fname.form-control(name='fname', type='text', placeholder='First Name')
+                      .form-group
+                        span.col-md-1.col-md-offset-1.text-center
+                          i.fa.fa-user.bigicon
+                        .col-md-8
+                          input#lname.form-control(name='lname', type='text', placeholder='Last Name')
+                      .form-group
+                        span.col-md-1.col-md-offset-1.text-center
+                          i.fa.fa-envelope-o.bigicon
+                        .col-md-8
+                          input#email.form-control(name='email', type='text', placeholder='Email Address')
+                      .form-group
+                        span.col-md-1.col-md-offset-1.text-center
+                          i.fa.fa-phone-square.bigicon
+                        .col-md-8
+                          input#phone.form-control(name='phone', type='text', placeholder='Phone')
+                      .form-group
+                        span.col-md-1.col-md-offset-1.text-center
+                          i.fa.fa-pencil-square-o.bigicon
+                        .col-md-8
+                          textarea#message.form-control(name='message', placeholder='Enter your massage for us here. We will get back to you as soon as possible.', rows='7')
+                      .form-group
+                        .col-md-12.text-center
+                          button.btn.btn-primary.btn-lg(type='submit') Submit
+    style.
+      .header {
+      color: #36A0FF;
+      font-size: 27px;
+      padding: 10px;
+      }
+      .bigicon {
+      font-size: 35px;
+      color: #36A0FF;
+      }
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/bootstrap.min.js')
+    script(src='javascripts/jquery.easing.min.js')
+    script(src='javascripts/jquery.fittext.js')
+    script(src='javascripts/wow.min.js')
+    script(src='javascripts/creative.js')
